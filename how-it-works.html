@@ -1,136 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How It Works — ArenaAnywhere</title>
-  <meta name="description" content="See how ArenaAnywhere connects PPSSPP ad-hoc multiplayer matches in 5 simple steps."/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - ArenaAnywhere</title>
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="bg-[#0b1020] text-gray-200">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/80 backdrop-blur">
-    <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <a href="./index.html" class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-[#00ff88] to-[#ff0055]"></div>
-        <span class="font-extrabold tracking-wide">ArenaAnywhere</span>
-      </a>
-
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a class="text-white hover:text-white/90" href="./how-it-works.html">How it Works</a>
-        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
-        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
-        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
-        <a href="./download.html" class="rounded-xl px-4 py-2 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
-          Get Early Access
-        </a>
-      </div>
-
-      <button id="menuBtn" class="md:hidden rounded-xl border border-white/15 px-3 py-2 text-sm hover:bg-white/5">Menu</button>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html" class="active">How It Works</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="download.html" class="btn-download">Download</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0b1020]">
-      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm">
-        <a class="text-white hover:text-white/90" href="./how-it-works.html">How it Works</a>
-        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
-        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
-        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="mx-auto max-w-6xl px-4 py-14">
-    <section data-reveal>
-      <p class="text-sm text-white/60">How It Works</p>
-      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold">
-        From “who go host?” to “kickoff” in minutes.
-      </h1>
-      <p class="mt-4 text-white/70 max-w-2xl">
-        ArenaAnywhere helps you find an opponent and auto-connect the session so you can paste IPs into PPSSPP and play ad-hoc online.
-      </p>
+    <section class="page-hero">
+        <div class="container">
+            <h1>How It Works</h1>
+            <p>From download to your first match in 3 simple steps</p>
+        </div>
     </section>
 
-    <!-- Timeline -->
-    <section class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8" data-reveal>
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
-        <h2 class="text-xl font-bold">5-step flow</h2>
-        <ol class="mt-5 space-y-4 text-white/80">
-          <li class="flex gap-3">
-            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">1</span>
-            <div><b>Download</b> ArenaAnywhere.</div>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">2</span>
-            <div><b>Sign in with Google</b> (fast + secure).</div>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">3</span>
-            <div><b>Find an opponent</b> or invite a friend.</div>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">4</span>
-            <div><b>Tap “Connect”</b> — we auto-set up the network.</div>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">5</span>
-            <div><b>Copy IPs</b> into PPSSPP and play.</div>
-          </li>
-        </ol>
+    <section class="detailed-steps">
+        <div class="container">
+            <div class="step-detail">
+                <div class="step-badge">Step 1</div>
+                <div class="step-detail-content">
+                    <h2><i class="fas fa-download"></i> Download & Setup</h2>
+                    <div class="step-grid">
+                        <div class="step-text">
+                            <h3>Get the App</h3>
+                            <ol>
+                                <li>Download ArenaAnywhere for Android</li>
+                                <li>Install on your device (Android 7.0 or higher)</li>
+                                <li>Open the app and sign in</li>
+                                <li>Choose your username (this is how friends find you)</li>
+                                <li>Grant necessary permissions (network access)</li>
+                            </ol>
+                            <div class="tip-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Pro Tip:</strong> Choose a memorable username - your friends will search for you with it!
+                            </div>
+                        </div>
+                        <div class="step-visual">
+                            <div class="phone-mockup">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Sign In Screen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="mt-7 flex gap-3">
-          <a href="./download.html" class="rounded-2xl px-5 py-3 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
-            Join the Waitlist
-          </a>
-          <a href="./features.html" class="rounded-2xl px-5 py-3 font-semibold border border-white/15 hover:bg-white/5">
-            See Features
-          </a>
+            <div class="step-detail">
+                <div class="step-badge">Step 2</div>
+                <div class="step-detail-content">
+                    <h2><i class="fas fa-users"></i> Find Your Opponent</h2>
+                    <div class="step-grid">
+                        <div class="step-text">
+                            <h3>Two Ways to Play</h3>
+                            <div class="option-cards">
+                                <div class="option-card">
+                                    <h4><i class="fas fa-bolt"></i> Quick Match</h4>
+                                    <ul>
+                                        <li>Tap "Quick Match" on home screen</li>
+                                        <li>We find an opponent at your skill level</li>
+                                        <li>Usually takes 5-15 seconds</li>
+                                        <li>Perfect for competitive play</li>
+                                    </ul>
+                                </div>
+                                <div class="option-card">
+                                    <h4><i class="fas fa-user-friends"></i> Play with Friends</h4>
+                                    <ul>
+                                        <li>Go to "Search" tab</li>
+                                        <li>Search friend's username</li>
+                                        <li>Send friend request</li>
+                                        <li>Once accepted, challenge them anytime</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tip-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Pro Tip:</strong> Your friend code is in your profile. Share it on WhatsApp to quickly add friends!
+                            </div>
+                        </div>
+                        <div class="step-visual">
+                            <div class="phone-mockup">
+                                <i class="fas fa-search"></i>
+                                <p>Find Opponent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-detail">
+                <div class="step-badge">Step 3</div>
+                <div class="step-detail-content">
+                    <h2><i class="fas fa-plug"></i> Connect & Play</h2>
+                    <div class="step-grid">
+                        <div class="step-text">
+                            <h3>Automatic Connection</h3>
+                            <ol>
+                                <li>Once matched, both players enter the Match Lobby</li>
+                                <li>Tap "Connect to Network" button</li>
+                                <li>Our VPN connects you automatically (10 seconds)</li>
+                                <li>Your IP and opponent's IP show on screen</li>
+                                <li>Tap the copy button next to each IP</li>
+                            </ol>
+                            <h3>Configure PPSSPP</h3>
+                            <ol start="6">
+                                <li>Open PPSSPP → Settings → Networking</li>
+                                <li>Enable "Enable networking/WLAN"</li>
+                                <li><strong>Host:</strong> Enable "Built-in PRO ad hoc server"</li>
+                                <li><strong>Guest:</strong> Enter host's IP in "Change PRO ad hoc server IP"</li>
+                                <li>Both set Port offset to 10000</li>
+                                <li>Start eFootball → Ad-hoc → Host creates, Guest joins</li>
+                            </ol>
+                            <div class="success-box">
+                                <i class="fas fa-check-circle"></i>
+                                <strong>You're Playing!</strong> Enjoy lag-free matches with minimal packet loss.
+                            </div>
+                        </div>
+                        <div class="step-visual">
+                            <div class="phone-mockup">
+                                <i class="fas fa-wifi"></i>
+                                <p>Connected!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
-        <h2 class="text-xl font-bold">Connection tips (so you don’t suffer)</h2>
-        <ul class="mt-5 space-y-3 text-white/70">
-          <li>• Use stable Wi-Fi if possible (mobile data works, but can be spicy).</li>
-          <li>• Keep PPSSPP version close to your opponent’s version.</li>
-          <li>• If one person can’t see rooms, swap host and try again.</li>
-          <li>• Avoid power-saving mode during matches (it can kill background networking).</li>
-          <li>• Use the in-app connection test before you waste 30 minutes arguing.</li>
-        </ul>
-
-        <div class="mt-7 rounded-2xl border border-white/10 bg-black/20 p-5">
-          <p class="text-sm text-white/60">Real talk:</p>
-          <p class="mt-1 text-white/80">
-            Ad-hoc online is basically “local multiplayer pretending to be internet multiplayer.”
-            ArenaAnywhere handles the hard part so you don’t do manual VPN gymnastics.
-          </p>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
-      <div class="text-white/70 text-sm">
-        <div class="font-semibold text-white">ArenaAnywhere</div>
-        <div class="mt-1">Play ad-hoc online without the manual setup.</div>
-        <div class="mt-3">© <span id="year"></span> ArenaAnywhere.site</div>
-      </div>
+    <section class="video-section">
+        <div class="container">
+            <h2>Watch It In Action</h2>
+            <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+                <p>Video Tutorial Coming Soon</p>
+            </div>
+        </div>
+    </section>
 
-      <div class="flex flex-wrap gap-4 text-sm text-white/70">
-        <a class="hover:text-white" href="#" rel="noopener">X</a>
-        <a class="hover:text-white" href="#" rel="noopener">TikTok</a>
-        <a class="hover:text-white" href="#" rel="noopener">Instagram</a>
-        <a class="hover:text-white" href="#" rel="noopener">YouTube</a>
-        <a class="hover:text-white" href="#" rel="noopener">Facebook</a>
-      </div>
-    </div>
-  </footer>
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Try?</h2>
+                <p>Download now and play your first match in minutes</p>
+                <a href="download.html" class="btn btn-primary btn-large"><i class="fab fa-android"></i> Download Now</a>
+            </div>
+        </div>
+    </section>
 
-  <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 rounded-2xl bg-white text-black px-4 py-2 text-sm shadow-lg transition-opacity" style="opacity:0;"></div>
-
-  <script src="./assets/app.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+                    <div class="social-links">
+                        <a href="https://twitter.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.com/invite/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArenaAnywhere. All rights reserved.</p>
+                <p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third-party application.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
 </body>
 </html>

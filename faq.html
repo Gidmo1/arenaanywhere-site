@@ -1,142 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ — ArenaAnywhere</title>
-  <meta name="description" content="Frequently asked questions about ArenaAnywhere, PPSSPP ad-hoc online, and connectivity."/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ArenaAnywhere</title>
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="bg-[#0b1020] text-gray-200">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/80 backdrop-blur">
-    <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <a href="./index.html" class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-[#00ff88] to-[#ff0055]"></div>
-        <span class="font-extrabold tracking-wide">ArenaAnywhere</span>
-      </a>
-
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a class="text-white/70 hover:text-white" href="./how-it-works.html">How it Works</a>
-        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
-        <a class="text-white hover:text-white/90" href="./faq.html">FAQ</a>
-        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
-        <a href="./download.html" class="rounded-xl px-4 py-2 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
-          Get Early Access
-        </a>
-      </div>
-
-      <button id="menuBtn" class="md:hidden rounded-xl border border-white/15 px-3 py-2 text-sm hover:bg-white/5">Menu</button>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="download.html" class="btn-download">Download</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0b1020]">
-      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm">
-        <a class="text-white/70 hover:text-white" href="./how-it-works.html">How it Works</a>
-        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
-        <a class="text-white hover:text-white/90" href="./faq.html">FAQ</a>
-        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="mx-auto max-w-6xl px-4 py-14">
-    <section data-reveal>
-      <p class="text-sm text-white/60">FAQ</p>
-      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold">Questions people actually ask.</h1>
-      <p class="mt-4 text-white/70 max-w-2xl">
-        If it’s not here, it’s probably a skill issue. Just kidding — we’ll add it.
-      </p>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about ArenaAnywhere</p>
+        </div>
     </section>
-
-    <section class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5" data-reveal>
-      <!-- Required FAQs -->
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Do I need to install Tailscale?</h3>
-        <p class="mt-2 text-white/70">No. ArenaAnywhere handles the connection setup.</p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Is it free?</h3>
-        <p class="mt-2 text-white/70">Yes. Core matchmaking + connect is free.</p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Which games are supported?</h3>
-        <p class="mt-2 text-white/70">Any ad-hoc game, optimized for PES/eFootball.</p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">What if I can’t connect?</h3>
-        <p class="mt-2 text-white/70">Use the built-in connection test + support tips inside the app.</p>
-      </div>
-
-      <!-- Extra realistic FAQs -->
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Will this reduce lag?</h3>
-        <p class="mt-2 text-white/70">
-          It won’t magically delete your network issues — but it helps you connect reliably.
-          Lag depends on distance, network quality, and device performance.
-        </p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Is it safe?</h3>
-        <p class="mt-2 text-white/70">
-          The goal is simple: connect you to your opponent for the match. No sketchy “install 5 apps” nonsense.
-        </p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">What Android versions are supported?</h3>
-        <p class="mt-2 text-white/70">
-          We’re targeting modern Android versions first. Early access users will get exact requirements as builds drop.
-        </p>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold text-lg">Do both players need ArenaAnywhere?</h3>
-        <p class="mt-2 text-white/70">
-          Yes — for matchmaking and auto-connect to work cleanly, both players should use it.
-        </p>
-      </div>
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-categories">
+                <button class="faq-category active" data-category="general">General</button>
+                <button class="faq-category" data-category="technical">Technical</button>
+                <button class="faq-category" data-category="gameplay">Gameplay</button>
+                <button class="faq-category" data-category="account">Account</button>
+            </div>
+            <div class="faq-list" data-category="general">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is ArenaAnywhere?</span></div>
+                    <div class="faq-answer"><p>ArenaAnywhere is a companion app for PPSSPP that makes online multiplayer simple. We handle VPN connections, matchmaking, and player coordination so you can focus on playing.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How much does it cost?</span></div>
+                    <div class="faq-answer"><p>ArenaAnywhere offers a free tier with all core features. We may introduce optional premium features in the future for advanced functionality.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Which games does it support?</span></div>
+                    <div class="faq-answer"><p>ArenaAnywhere works with any PPSSPP game that has ad-hoc multiplayer support. It's optimized for eFootball/PES games, but also works with games like Monster Hunter, Tekken, and more.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Do I need other VPN apps?</span></div>
+                    <div class="faq-answer"><p>No! ArenaAnywhere handles all VPN connections automatically through our servers. You don't need to install any additional VPN apps.</p></div>
+                </div>
+            </div>
+            <div class="faq-list hidden" data-category="technical">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What are the minimum requirements?</span></div>
+                    <div class="faq-answer"><p>Android 7.0 or higher, stable internet connection (WiFi or 4G), and PPSSPP emulator installed on your device.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Why can't I connect to my opponent?</span></div>
+                    <div class="faq-answer"><p>Try these steps: 1) Check your internet connection, 2) Tap "Test Connection" in the match lobby, 3) Make sure both players have completed the connection step, 4) Restart the app if needed.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I configure PPSSPP?</span></div>
+                    <div class="faq-answer"><p>Go to PPSSPP Settings → Networking → Enable "WLAN". Host players enable "Built-in PRO ad hoc server". Guest players enter the host's IP. Both players set Port offset to 10000. See our How It Works page for detailed instructions.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Is my connection secure?</span></div>
+                    <div class="faq-answer"><p>Yes! All connections are encrypted end-to-end. Your real IP address is never exposed to other players. We use industry-standard VPN technology.</p></div>
+                </div>
+            </div>
+            <div class="faq-list hidden" data-category="gameplay">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How does matchmaking work?</span></div>
+                    <div class="faq-answer"><p>Our algorithm matches you with players of similar skill rating. You can also use Quick Match for instant games or challenge specific friends directly.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I play with friends in other countries?</span></div>
+                    <div class="faq-answer"><p>Absolutely! ArenaAnywhere works globally. Our VPN technology ensures smooth connections regardless of location.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is the skill rating system?</span></div>
+                    <div class="faq-answer"><p>We use an ELO-based system. Win matches to gain rating, lose to lose points. Your rating determines matchmaking and leaderboard position.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do tournaments work?</span></div>
+                    <div class="faq-answer"><p>Tournaments run on weekends with bracket-style elimination. Sign up during the registration window, compete in your matches, and climb the bracket to win!</p></div>
+                </div>
+            </div>
+            <div class="faq-list hidden" data-category="account">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I create an account?</span></div>
+                    <div class="faq-answer"><p>Simply sign in through the app. Choose your username and you're ready to play!</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I change my username?</span></div>
+                    <div class="faq-answer"><p>Yes, go to Settings → Edit Profile. Note that you can only change your username once every 30 days.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I add friends?</span></div>
+                    <div class="faq-answer"><p>Go to the Search tab, enter their username, and send a friend request. They can also add you using your unique friend code found in your profile.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I delete my account?</span></div>
+                    <div class="faq-answer"><p>Yes, go to Settings → Account → Delete Account. This action is permanent and cannot be undone.</p></div>
+                </div>
+            </div>
+            <div class="faq-contact">
+                <h3>Still have questions?</h3>
+                <p>Can't find what you're looking for? Contact our support team.</p>
+                <a href="mailto:support@areneanywhere.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Support</a>
+            </div>
+        </div>
     </section>
-
-    <section class="mt-12 rounded-3xl border border-white/10 bg-white/5 p-7" data-reveal>
-      <h2 class="text-xl font-bold">Still stuck?</h2>
-      <p class="mt-2 text-white/70">No shame. Some networks are just… evil.</p>
-      <div class="mt-6 flex gap-3">
-        <a href="./download.html" class="rounded-2xl px-5 py-3 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
-          Join the Waitlist
-        </a>
-        <a href="./how-it-works.html" class="rounded-2xl px-5 py-3 font-semibold border border-white/15 hover:bg-white/5">
-          Read How It Works
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
-      <div class="text-white/70 text-sm">
-        <div class="font-semibold text-white">ArenaAnywhere</div>
-        <div class="mt-1">Play ad-hoc online without the manual setup.</div>
-        <div class="mt-3">© <span id="year"></span> ArenaAnywhere.site</div>
-      </div>
-
-      <div class="flex flex-wrap gap-4 text-sm text-white/70">
-        <a class="hover:text-white" href="#" rel="noopener">X</a>
-        <a class="hover:text-white" href="#" rel="noopener">TikTok</a>
-        <a class="hover:text-white" href="#" rel="noopener">Instagram</a>
-        <a class="hover:text-white" href="#" rel="noopener">YouTube</a>
-        <a class="hover:text-white" href="#" rel="noopener">Facebook</a>
-      </div>
-    </div>
-  </footer>
-
-  <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 rounded-2xl bg-white text-black px-4 py-2 text-sm shadow-lg transition-opacity" style="opacity:0;"></div>
-  <script src="./assets/app.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><p>&copy; 2026 ArenaAnywhere.</p><p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third-party application.</p></div>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
 </body>
 </html>
