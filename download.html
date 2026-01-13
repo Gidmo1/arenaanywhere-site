@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download — ArenaAnywhere</title>
+  <meta name="description" content="Join the ArenaAnywhere waitlist for early access builds. App Store and Google Play coming soon."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+
+<body class="bg-[#0b1020] text-gray-200">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/80 backdrop-blur">
+    <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-[#00ff88] to-[#ff0055]"></div>
+        <span class="font-extrabold tracking-wide">ArenaAnywhere</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a class="text-white/70 hover:text-white" href="./how-it-works.html">How it Works</a>
+        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
+        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
+        <a class="text-white hover:text-white/90" href="./download.html">Download</a>
+        <a href="./download.html" class="rounded-xl px-4 py-2 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
+          Get Early Access
+        </a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden rounded-xl border border-white/15 px-3 py-2 text-sm hover:bg-white/5">Menu</button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0b1020]">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm">
+        <a class="text-white/70 hover:text-white" href="./how-it-works.html">How it Works</a>
+        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
+        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
+        <a class="text-white hover:text-white/90" href="./download.html">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-14">
+    <section data-reveal>
+      <p class="text-sm text-white/60">Download</p>
+      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold">Get early access.</h1>
+      <p class="mt-4 text-white/70 max-w-2xl">
+        We’ll notify you when builds drop. No spam. No nonsense.
+      </p>
+    </section>
+
+    <section class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6" data-reveal>
+      <!-- Coming soon badges -->
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+        <h2 class="text-xl font-bold">Stores</h2>
+        <p class="mt-2 text-white/70">Badges are live, downloads soon.</p>
+
+        <div class="mt-6 space-y-3">
+          <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 p-4">
+            <div>
+              <div class="font-semibold">Google Play</div>
+              <div class="text-sm text-white/60">Coming soon</div>
+            </div>
+            <span class="text-xs font-semibold rounded-full bg-[#00ff88] text-black px-3 py-1">Android</span>
+          </div>
+
+          <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 p-4">
+            <div>
+              <div class="font-semibold">App Store</div>
+              <div class="text-sm text-white/60">Coming soon</div>
+            </div>
+            <span class="text-xs font-semibold rounded-full bg-[#ff0055] text-white px-3 py-1">iOS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waitlist -->
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+        <h2 class="text-xl font-bold">Join the waitlist</h2>
+        <p class="mt-2 text-white/70">Get early builds + updates.</p>
+
+        <form id="waitlistForm" class="mt-6 space-y-3">
+          <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            class="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 outline-none focus:border-[#00ff88]"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full rounded-2xl px-6 py-3 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green"
+          >
+            Join Waitlist
+          </button>
+          <p class="text-xs text-white/60">Front-end demo form for now. You can connect real email later.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="mt-12 rounded-3xl border border-white/10 bg-white/5 p-7" data-reveal>
+      <h2 class="text-xl font-bold">Follow updates</h2>
+      <p class="mt-2 text-white/70">Drop your real social links later. For now, placeholders.</p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="rounded-2xl border border-white/15 px-4 py-2 hover:bg-white/5" href="#">X</a>
+        <a class="rounded-2xl border border-white/15 px-4 py-2 hover:bg-white/5" href="#">TikTok</a>
+        <a class="rounded-2xl border border-white/15 px-4 py-2 hover:bg-white/5" href="#">Instagram</a>
+        <a class="rounded-2xl border border-white/15 px-4 py-2 hover:bg-white/5" href="#">YouTube</a>
+        <a class="rounded-2xl border border-white/15 px-4 py-2 hover:bg-white/5" href="#">Facebook</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+      <div class="text-white/70 text-sm">
+        <div class="font-semibold text-white">ArenaAnywhere</div>
+        <div class="mt-1">Play ad-hoc online without the manual setup.</div>
+        <div class="mt-3">© <span id="year"></span> ArenaAnywhere.site</div>
+      </div>
+
+      <div class="flex flex-wrap gap-4 text-sm text-white/70">
+        <a class="hover:text-white" href="#" rel="noopener">X</a>
+        <a class="hover:text-white" href="#" rel="noopener">TikTok</a>
+        <a class="hover:text-white" href="#" rel="noopener">Instagram</a>
+        <a class="hover:text-white" href="#" rel="noopener">YouTube</a>
+        <a class="hover:text-white" href="#" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 rounded-2xl bg-white text-black px-4 py-2 text-sm shadow-lg transition-opacity" style="opacity:0;"></div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

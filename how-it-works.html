@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works — ArenaAnywhere</title>
+  <meta name="description" content="See how ArenaAnywhere connects PPSSPP ad-hoc multiplayer matches in 5 simple steps."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+
+<body class="bg-[#0b1020] text-gray-200">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/80 backdrop-blur">
+    <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-[#00ff88] to-[#ff0055]"></div>
+        <span class="font-extrabold tracking-wide">ArenaAnywhere</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a class="text-white hover:text-white/90" href="./how-it-works.html">How it Works</a>
+        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
+        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
+        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
+        <a href="./download.html" class="rounded-xl px-4 py-2 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
+          Get Early Access
+        </a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden rounded-xl border border-white/15 px-3 py-2 text-sm hover:bg-white/5">Menu</button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-[#0b1020]">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm">
+        <a class="text-white hover:text-white/90" href="./how-it-works.html">How it Works</a>
+        <a class="text-white/70 hover:text-white" href="./features.html">Features</a>
+        <a class="text-white/70 hover:text-white" href="./faq.html">FAQ</a>
+        <a class="text-white/70 hover:text-white" href="./download.html">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-14">
+    <section data-reveal>
+      <p class="text-sm text-white/60">How It Works</p>
+      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold">
+        From “who go host?” to “kickoff” in minutes.
+      </h1>
+      <p class="mt-4 text-white/70 max-w-2xl">
+        ArenaAnywhere helps you find an opponent and auto-connect the session so you can paste IPs into PPSSPP and play ad-hoc online.
+      </p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8" data-reveal>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+        <h2 class="text-xl font-bold">5-step flow</h2>
+        <ol class="mt-5 space-y-4 text-white/80">
+          <li class="flex gap-3">
+            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">1</span>
+            <div><b>Download</b> ArenaAnywhere.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">2</span>
+            <div><b>Sign in with Google</b> (fast + secure).</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">3</span>
+            <div><b>Find an opponent</b> or invite a friend.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">4</span>
+            <div><b>Tap “Connect”</b> — we auto-set up the network.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#00ff88] text-black font-bold text-sm">5</span>
+            <div><b>Copy IPs</b> into PPSSPP and play.</div>
+          </li>
+        </ol>
+
+        <div class="mt-7 flex gap-3">
+          <a href="./download.html" class="rounded-2xl px-5 py-3 font-semibold bg-[#00ff88] text-black hover:opacity-90 glow-green">
+            Join the Waitlist
+          </a>
+          <a href="./features.html" class="rounded-2xl px-5 py-3 font-semibold border border-white/15 hover:bg-white/5">
+            See Features
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-7">
+        <h2 class="text-xl font-bold">Connection tips (so you don’t suffer)</h2>
+        <ul class="mt-5 space-y-3 text-white/70">
+          <li>• Use stable Wi-Fi if possible (mobile data works, but can be spicy).</li>
+          <li>• Keep PPSSPP version close to your opponent’s version.</li>
+          <li>• If one person can’t see rooms, swap host and try again.</li>
+          <li>• Avoid power-saving mode during matches (it can kill background networking).</li>
+          <li>• Use the in-app connection test before you waste 30 minutes arguing.</li>
+        </ul>
+
+        <div class="mt-7 rounded-2xl border border-white/10 bg-black/20 p-5">
+          <p class="text-sm text-white/60">Real talk:</p>
+          <p class="mt-1 text-white/80">
+            Ad-hoc online is basically “local multiplayer pretending to be internet multiplayer.”
+            ArenaAnywhere handles the hard part so you don’t do manual VPN gymnastics.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+      <div class="text-white/70 text-sm">
+        <div class="font-semibold text-white">ArenaAnywhere</div>
+        <div class="mt-1">Play ad-hoc online without the manual setup.</div>
+        <div class="mt-3">© <span id="year"></span> ArenaAnywhere.site</div>
+      </div>
+
+      <div class="flex flex-wrap gap-4 text-sm text-white/70">
+        <a class="hover:text-white" href="#" rel="noopener">X</a>
+        <a class="hover:text-white" href="#" rel="noopener">TikTok</a>
+        <a class="hover:text-white" href="#" rel="noopener">Instagram</a>
+        <a class="hover:text-white" href="#" rel="noopener">YouTube</a>
+        <a class="hover:text-white" href="#" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 rounded-2xl bg-white text-black px-4 py-2 text-sm shadow-lg transition-opacity" style="opacity:0;"></div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
