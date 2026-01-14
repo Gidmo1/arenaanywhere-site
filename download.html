@@ -1,100 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download - ArenaAnywhere</title>
-    <link rel="stylesheet" href="assets/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download — ArenaAnywhere</title>
+  <meta name="description" content="Join the ArenaAnywhere early access list. Android first, iOS later." />
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
-            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="download.html" class="btn-download active">Download</a></li>
-            </ul>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="download.html" class="btn-download active">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="download-hero" style="padding:4.75rem 0 2.75rem;">
+    <div class="container">
+      <h1 style="text-align:center;font-size:clamp(2rem,4.5vw,3rem);margin-bottom:.6rem;">Download</h1>
+      <p style="text-align:center;color:var(--text-dim);max-width:720px;margin:0 auto;">
+        ArenaAnywhere is preparing for public release. Join early access to be notified when builds are available.
+      </p>
+
+      <div class="download-cards">
+        <div class="download-card primary-card">
+          <div class="download-icon"><i class="fab fa-android"></i></div>
+          <h3>Android</h3>
+          <p class="version">Early access</p>
+          <p class="requirements">Target: Android 7.0+</p>
+          <a href="#" class="btn btn-primary btn-large coming-soon" aria-disabled="true">
+            <i class="fab fa-android"></i> Coming soon
+          </a>
+          <p class="download-note">Android is the first priority for launch.</p>
         </div>
-    </nav>
-    <section class="download-hero">
-        <div class="container">
-            <h1>Download ArenaAnywhere</h1>
-            <p>Available for Android. iOS coming soon.</p>
-            <div class="download-cards">
-                <div class="download-card primary-card">
-                    <div class="download-icon"><i class="fab fa-android"></i></div>
-                    <h3>Android</h3>
-                    <p class="version">Version 1.0.0</p>
-                    <p class="requirements">Requires Android 7.0 or higher</p>
-                    <a href="#" class="btn btn-primary btn-large coming-soon">
-                        <i class="fab fa-android"></i> Coming Soon
-                    </a>
-                    <p class="download-note">Currently in beta testing. Public release soon!</p>
-                </div>
-                <div class="download-card">
-                    <div class="download-icon disabled"><i class="fab fa-apple"></i></div>
-                    <h3>iOS</h3>
-                    <p class="version">Coming Soon</p>
-                    <p class="requirements">Requires iOS 13.0 or higher</p>
-                    <button class="btn btn-outline btn-large" disabled><i class="fab fa-app-store"></i> Not Available Yet</button>
-                    <p class="download-note">iOS version in development. Stay tuned!</p>
-                </div>
-            </div>
-            <div class="beta-signup">
-                <h3>Want Early Access?</h3>
-                <p>Join our beta testing program and get the app before everyone else.</p>
-                <form class="beta-form" id="betaForm">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Join Beta</button>
-                </form>
-                <p class="form-note">We'll email you when beta slots are available. No spam, promise!</p>
-            </div>
+
+        <div class="download-card">
+          <div class="download-icon disabled"><i class="fab fa-apple"></i></div>
+          <h3>iOS</h3>
+          <p class="version">Planned</p>
+          <p class="requirements">Target: iOS 13.0+</p>
+          <button class="btn btn-secondary btn-large" disabled><i class="fab fa-app-store-ios"></i> Not available yet</button>
+          <p class="download-note">iOS will follow after Android stabilization.</p>
         </div>
-    </section>
-    <section class="system-requirements">
-        <div class="container">
-            <h2>System Requirements</h2>
-            <div class="req-grid">
-                <div class="req-card">
-                    <h3><i class="fas fa-mobile-alt"></i> Android</h3>
-                    <ul>
-                        <li><strong>OS:</strong> Android 7.0 (Nougat) or higher</li>
-                        <li><strong>RAM:</strong> 2GB minimum, 4GB recommended</li>
-                        <li><strong>Storage:</strong> 50MB free space</li>
-                        <li><strong>Network:</strong> WiFi or 4G/5G</li>
-                        <li><strong>Other:</strong> PPSSPP emulator installed</li>
-                    </ul>
-                </div>
-                <div class="req-card">
-                    <h3><i class="fas fa-wifi"></i> Network</h3>
-                    <ul>
-                        <li><strong>Speed:</strong> 5 Mbps minimum</li>
-                        <li><strong>Type:</strong> WiFi, 4G, or 5G</li>
-                        <li><strong>Firewall:</strong> Works behind any NAT</li>
-                        <li><strong>VPN:</strong> No third-party VPN needed</li>
-                        <li><strong>Ports:</strong> No port forwarding required</li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+
+      <div class="beta-signup">
+        <h3>Join early access</h3>
+        <p style="color:var(--text-dim);">We’ll email you when builds open. No spam.</p>
+        <form class="beta-form" id="betaForm">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Notify me</button>
+        </form>
+        <p class="form-note">Tip: use an email you can access on your phone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="system-requirements">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:1.5rem;">Basic requirements</h2>
+      <div class="req-grid">
+        <div class="req-card">
+          <h3><i class="fas fa-mobile-alt"></i> Device</h3>
+          <ul>
+            <li><strong>Android:</strong> 7.0 or higher (target)</li>
+            <li><strong>RAM:</strong> 2GB minimum</li>
+            <li><strong>Storage:</strong> small footprint (target)</li>
+            <li><strong>Other:</strong> PPSSPP installed</li>
+          </ul>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://twitter.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                <a href="https://discord.com/invite/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
-                <a href="https://youtube.com/@arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                <a href="https://instagram.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="footer-bottom"><p>&copy; 2026 ArenaAnywhere.</p><p class="disclaimer">PPSSPP trademark © Henrik Rydgård.</p></div>
+
+        <div class="req-card">
+          <h3><i class="fas fa-wifi"></i> Network</h3>
+          <ul>
+            <li><strong>Connection:</strong> stable Wi‑Fi or mobile data</li>
+            <li><strong>Latency:</strong> depends on distance and provider</li>
+            <li><strong>Tip:</strong> try Wi‑Fi for consistent sessions</li>
+          </ul>
         </div>
-    </footer>
-    <script src="assets/app.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ArenaAnywhere.</p>
+        <p class="disclaimer">PPSSPP trademark © Henrik Rydgård.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

@@ -1,125 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - ArenaAnywhere</title>
-    <link rel="stylesheet" href="assets/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — ArenaAnywhere</title>
+  <meta name="description" content="Frequently asked questions about ArenaAnywhere for PPSSPP ad-hoc online play." />
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
-            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
-                <li><a href="download.html" class="btn-download">Download</a></li>
-            </ul>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="download.html" class="btn-download">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>FAQ</h1>
+      <p>Clear answers. No marketing fluff.</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-categories">
+        <button class="faq-category active" data-category="general">General</button>
+        <button class="faq-category" data-category="technical">Technical</button>
+        <button class="faq-category" data-category="pro">Pro</button>
+        <button class="faq-category" data-category="account">Account</button>
+      </div>
+
+      <div class="faq-list" data-category="general">
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is ArenaAnywhere?</span></div>
+          <div class="faq-answer"><p>ArenaAnywhere is a companion app that helps PPSSPP players coordinate and connect ad-hoc matches online more easily.</p></div>
         </div>
-    </nav>
-    <section class="page-hero">
-        <div class="container">
-            <h1>Frequently Asked Questions</h1>
-            <p>Everything you need to know about ArenaAnywhere</p>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Which games are supported?</span></div>
+          <div class="faq-answer"><p>Any PPSSPP title that supports ad-hoc multiplayer. The initial focus is eFootball/PES.</p></div>
         </div>
-    </section>
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq-categories">
-                <button class="faq-category active" data-category="general">General</button>
-                <button class="faq-category" data-category="technical">Technical</button>
-                <button class="faq-category" data-category="gameplay">Gameplay</button>
-                <button class="faq-category" data-category="account">Account</button>
-            </div>
-            <div class="faq-list" data-category="general">
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is ArenaAnywhere?</span></div>
-                    <div class="faq-answer"><p>ArenaAnywhere is a companion app for PPSSPP that makes online multiplayer simple. We handle VPN connections, matchmaking, and player coordination so you can focus on playing.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How much does it cost?</span></div>
-                    <div class="faq-answer"><p>ArenaAnywhere offers a free tier with all core features. We may introduce optional premium features in the future for advanced functionality.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Which games does it support?</span></div>
-                    <div class="faq-answer"><p>ArenaAnywhere works with any PPSSPP game that has ad-hoc multiplayer support. It's optimized for eFootball/PES games, but also works with games like Monster Hunter, Tekken, and more.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Do I need other VPN apps?</span></div>
-                    <div class="faq-answer"><p>No! ArenaAnywhere handles all VPN connections automatically through our servers. You don't need to install any additional VPN apps.</p></div>
-                </div>
-            </div>
-            <div class="faq-list hidden" data-category="technical">
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What are the minimum requirements?</span></div>
-                    <div class="faq-answer"><p>Android 7.0 or higher, stable internet connection (WiFi or 4G), and PPSSPP emulator installed on your device.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Why can't I connect to my opponent?</span></div>
-                    <div class="faq-answer"><p>Try these steps: 1) Check your internet connection, 2) Tap "Test Connection" in the match lobby, 3) Make sure both players have completed the connection step, 4) Restart the app if needed.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I configure PPSSPP?</span></div>
-                    <div class="faq-answer"><p>Go to PPSSPP Settings → Networking → Enable "WLAN". Host players enable "Built-in PRO ad hoc server". Guest players enter the host's IP. Both players set Port offset to 10000. See our How It Works page for detailed instructions.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Is my connection secure?</span></div>
-                    <div class="faq-answer"><p>Yes! All connections are encrypted end-to-end. Your real IP address is never exposed to other players. We use industry-standard VPN technology.</p></div>
-                </div>
-            </div>
-            <div class="faq-list hidden" data-category="gameplay">
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How does matchmaking work?</span></div>
-                    <div class="faq-answer"><p>Our algorithm matches you with players of similar skill rating. You can also use Quick Match for instant games or challenge specific friends directly.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I play with friends in other countries?</span></div>
-                    <div class="faq-answer"><p>Absolutely! ArenaAnywhere works globally. Our VPN technology ensures smooth connections regardless of location.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is the skill rating system?</span></div>
-                    <div class="faq-answer"><p>We use an ELO-based system. Win matches to gain rating, lose to lose points. Your rating determines matchmaking and leaderboard position.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do tournaments work?</span></div>
-                    <div class="faq-answer"><p>Tournaments run on weekends with bracket-style elimination. Sign up during the registration window, compete in your matches, and climb the bracket to win!</p></div>
-                </div>
-            </div>
-            <div class="faq-list hidden" data-category="account">
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I create an account?</span></div>
-                    <div class="faq-answer"><p>Simply sign in through the app. Choose your username and you're ready to play!</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I change my username?</span></div>
-                    <div class="faq-answer"><p>Yes, go to Settings → Edit Profile. Note that you can only change your username once every 30 days.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I add friends?</span></div>
-                    <div class="faq-answer"><p>Go to the Search tab, enter their username, and send a friend request. They can also add you using your unique friend code found in your profile.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I delete my account?</span></div>
-                    <div class="faq-answer"><p>Yes, go to Settings → Account → Delete Account. This action is permanent and cannot be undone.</p></div>
-                </div>
-            </div>
-            <div class="faq-contact">
-                <h3>Still have questions?</h3>
-                <p>Can't find what you're looking for? Contact our support team.</p>
-                <a href="mailto:support@areneanywhere.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Support</a>
-            </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Is ArenaAnywhere free?</span></div>
+          <div class="faq-answer"><p>Core matchmaking and connection guidance are free. Optional Pro features add competitive tools.</p></div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom"><p>&copy; 2026 ArenaAnywhere.</p><p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third-party application.</p></div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Do I need to install a third-party VPN app?</span></div>
+          <div class="faq-answer"><p>No. ArenaAnywhere is designed to provide a guided connection experience without requiring you to install separate VPN apps.</p></div>
         </div>
-    </footer>
-    <script src="assets/app.js"></script>
+      </div>
+
+      <div class="faq-list hidden" data-category="technical">
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What are the minimum requirements?</span></div>
+          <div class="faq-answer"><p>Target is Android 7.0+ with PPSSPP installed and a stable internet connection.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Why can’t I connect to my opponent?</span></div>
+          <div class="faq-answer"><p>Start with basics: confirm both devices have stable internet, retry once after swapping host/guest, and check PPSSPP networking settings. Some networks are stricter than others.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I configure PPSSPP?</span></div>
+          <div class="faq-answer"><p>PPSSPP → Settings → Networking: enable networking/WLAN. Host enables “Built-in PRO ad hoc server”. Guest sets the host’s IP under “Change PRO ad hoc server IP”.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Is my connection secure?</span></div>
+          <div class="faq-answer"><p>Connections are protected in transit. Full security details will be published during launch documentation.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-list hidden" data-category="pro">
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>What is included in Pro?</span></div>
+          <div class="faq-answer"><p>Pro focuses on competitive tools: deeper stats, rankings, and event/tournament features. Exact details will be finalized closer to launch.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Will Pro be required to play?</span></div>
+          <div class="faq-answer"><p>No. Core matchmaking and connection flow remain available without Pro.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-list hidden" data-category="account">
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I create an account?</span></div>
+          <div class="faq-answer"><p>Sign in in the app and choose your username.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>Can I change my username?</span></div>
+          <div class="faq-answer"><p>Username changes may be limited to prevent abuse. Final rules will be published for early access.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question"><i class="fas fa-chevron-right"></i><span>How do I report a problem?</span></div>
+          <div class="faq-answer"><p>Use the support option in the app or email support during early access.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-contact">
+        <h3>Need help?</h3>
+        <p style="color:var(--text-dim);">Email support and include your device + network type for faster troubleshooting.</p>
+        <a href="mailto:support@arenaanywhere.site" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Support</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ArenaAnywhere.</p>
+        <p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third‑party application.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

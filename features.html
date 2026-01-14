@@ -1,159 +1,187 @@
-== features.html =====
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - ArenaAnywhere</title>
-    <link rel="stylesheet" href="assets/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — ArenaAnywhere</title>
+  <meta name="description" content="ArenaAnywhere features for PPSSPP ad-hoc online play: matchmaking, guided connection, friends, and optional Pro tools." />
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
-            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="features.html" class="active">Features</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="download.html" class="btn-download">Download</a></li>
-            </ul>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand"><i class="fas fa-gamepad"></i><span>ArenaAnywhere</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="download.html" class="btn-download">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Features</h1>
+      <p>Built for reliability first. Competitive tools available as Pro.</p>
+    </div>
+  </section>
+
+  <section class="features-detailed">
+    <div class="container">
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-bolt"></i></div>
+          <div>
+            <h2>Guided Connection Flow</h2>
+            <p class="feature-subtitle">Less guesswork, fewer retries</p>
+          </div>
         </div>
-    </nav>
-    <section class="page-hero">
-        <div class="container">
-            <h1>Powerful Features</h1>
-            <p>Everything you need for the ultimate PPSSPP online experience</p>
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span>Clear steps for host and guest</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Connection checks and basic diagnostics</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Copy-ready IP details for PPSSPP</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Support guidance when things fail</span></div>
+          </div>
+          <p style="color:var(--text-dim);">
+            ArenaAnywhere is designed to streamline the usual ad-hoc online setup so you can focus on the match.
+          </p>
         </div>
-    </section>
-    <section class="features-detailed">
-        <div class="container">
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-bolt"></i></div>
-                    <div>
-                        <h2>One-Tap VPN Connection</h2>
-                        <p class="feature-subtitle">No manual configuration needed</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Connects in under 10 seconds</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Works through any firewall or NAT</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Automatically assigns optimal IPs</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Built-in connection testing & ping display</span></div>
-                    </div>
-                    <p>No need for third-party VPN apps. We handle everything automatically. Just tap connect and you're ready to play.</p>
-                </div>
-            </div>
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-users-cog"></i></div>
-                    <div>
-                        <h2>Smart Matchmaking</h2>
-                        <p class="feature-subtitle">Find the perfect opponent</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Skill-based matching algorithm</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Region-aware (low ping priority)</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Quick Match finds opponent in 5-15 seconds</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Friend challenges with instant notifications</span></div>
-                    </div>
-                    <p>Our matchmaking system pairs you with players at your skill level for balanced, competitive matches.</p>
-                </div>
-            </div>
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-user-friends"></i></div>
-                    <div>
-                        <h2>Comprehensive Friend System</h2>
-                        <p class="feature-subtitle">Build your gaming network</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Add friends by username or unique code</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>See online/away/busy status in real-time</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Track your record against each friend</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Rivalry tracking & head-to-head stats</span></div>
-                    </div>
-                    <p>Build your squad, track rivalries, and always know when your friends are online and ready to play.</p>
-                </div>
-            </div>
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-chart-line"></i></div>
-                    <div>
-                        <h2>Complete Stats Tracking</h2>
-                        <p class="feature-subtitle">Monitor your progress</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Win/Loss/Draw records</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>ELO-based skill rating system</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Recent form tracker (last 10 matches)</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Global & friend leaderboards</span></div>
-                    </div>
-                    <p>See your improvement over time with detailed statistics. Climb the rankings and prove you're the best.</p>
-                </div>
-            </div>
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-shield-alt"></i></div>
-                    <div>
-                        <h2>Privacy & Security</h2>
-                        <p class="feature-subtitle">Your data is safe</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Your real IP never exposed</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>End-to-end encrypted connections</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>No data selling - player-funded</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Block and report toxic players</span></div>
-                    </div>
-                    <p>Play safely knowing your personal information is protected. We never share your data with third parties.</p>
-                </div>
-            </div>
-            <div class="feature-section">
-                <div class="feature-header">
-                    <div class="feature-icon-large"><i class="fas fa-trophy"></i></div>
-                    <div>
-                        <h2>Tournaments & Achievements</h2>
-                        <p class="feature-subtitle">Compete and unlock rewards</p>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-points">
-                        <div class="point"><i class="fas fa-check"></i><span>Weekly tournaments with brackets</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Achievement system with 20+ badges</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Showcase top 3 achievements on profile</span></div>
-                        <div class="point"><i class="fas fa-check"></i><span>Special titles for top performers</span></div>
-                    </div>
-                    <p>Compete in structured tournaments, unlock achievements, and show off your accomplishments to the community.</p>
-                </div>
-            </div>
+      </div>
+
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-users"></i></div>
+          <div>
+            <h2>Matchmaking and Friend Challenges</h2>
+            <p class="feature-subtitle">Find opponents without bouncing between group chats</p>
+          </div>
         </div>
-    </section>
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Experience All Features</h2>
-                <p> Download and start playing today.</p>
-                <a href="download.html" class="btn btn-primary btn-large"><i class="fab fa-android"></i> Get Started</a>
-            </div>
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span>Quick match for casual play</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Direct friend challenges</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Basic match history</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Simple player discovery</span></div>
+          </div>
+          <p style="color:var(--text-dim);">
+            The goal is straightforward: find someone to play, connect smoothly, and start the game.
+          </p>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom"><p>&copy; 2026 ArenaAnywhere. All rights reserved.</p><p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third-party application.</p></div>
+      </div>
+
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h2>Privacy-first Design</h2>
+            <p class="feature-subtitle">Built to reduce unnecessary exposure between players</p>
+          </div>
         </div>
-    </footer>
-    <script src="assets/app.js"></script>
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span>Designed to avoid sharing personal info</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Basic reporting and blocking</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Connections protected in transit</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Clear controls for account data</span></div>
+          </div>
+          <p style="color:var(--text-dim);">
+            Security is a baseline requirement — and we keep claims realistic until everything is fully audited.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <h2>Competitive Tracking (Pro)</h2>
+            <p class="feature-subtitle">For players who want deeper competitive insight</p>
+          </div>
+        </div>
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span>Expanded match history</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Ratings and form tracking</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Leaderboards (global / friends)</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Export / share summary cards</span></div>
+          </div>
+          <p style="color:var(--text-dim);">
+            Pro features are optional. Core play remains accessible without paying.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-trophy"></i></div>
+          <div>
+            <h2>Events and Tournaments (Pro)</h2>
+            <p class="feature-subtitle">Tools for communities and serious competition</p>
+          </div>
+        </div>
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span>Bracket-style tournaments</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Event scheduling and reminders</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Moderation tools for organizers</span></div>
+            <div class="point"><i class="fas fa-check"></i><span>Achievements and titles (optional)</span></div>
+          </div>
+          <p style="color:var(--text-dim);">
+            This is designed for communities that run consistent sessions and want structure.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-section">
+        <div class="feature-header">
+          <div class="feature-icon-large"><i class="fas fa-layer-group"></i></div>
+          <div>
+            <h2>Free vs Pro</h2>
+            <p class="feature-subtitle">Simple split: essentials are free, competitive tools are Pro</p>
+          </div>
+        </div>
+
+        <div class="feature-content">
+          <div class="feature-points">
+            <div class="point"><i class="fas fa-check"></i><span><strong>Free:</strong> matchmaking, friends, guided connection, basic support</span></div>
+            <div class="point"><i class="fas fa-check"></i><span><strong>Pro:</strong> advanced stats, competitive rankings, tournaments & event tools</span></div>
+          </div>
+
+          <p style="color:var(--text-dim);">
+            Pricing and exact Pro pack details will be published closer to launch.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Join early access</h2>
+        <p style="color:var(--text-dim);margin-bottom:1.2rem;">
+          Get updates, test builds, and help shape ArenaAnywhere before public release.
+        </p>
+        <a href="download.html" class="btn btn-primary btn-large"><i class="fas fa-envelope"></i> Join Early Access</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ArenaAnywhere. All rights reserved.</p>
+        <p class="disclaimer">PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third‑party application.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
