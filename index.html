@@ -1,250 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ArenaAnywhere — Online Ad-hoc play for PPSSPP eFootball</title>
-  <meta name="description" content="ArenaAnywhere helps PPSSPP eFootball players find opponents and connect to ad-hoc matches online with minimal setup." />
-  <link rel="stylesheet" href="assets/site.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaAnywhere - Play PPSSPP eFootball Online Instantly</title>
+    <meta name="description" content="Connect with PPSSPP players worldwide. Automatic VPN setup. Find opponents instantly. No hassle, just play.">
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <i class="fas fa-gamepad"></i>
-        <span>ArenaAnywhere</span>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="download.html" class="btn-download">Download</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          ArenaAnywhere for PPSSPP eFootball
-        </h1>
-        <p class="hero-subtitle">
-          Find an opponent, connect to the same ad-hoc network, and get into a match faster — without the usual trial‑and‑error.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="download.html" class="btn btn-primary btn-large">
-            <i class="fas fa-envelope"></i> Join Early Access
-          </a>
-          <a href="how-it-works.html" class="btn btn-secondary btn-large">
-            <i class="fas fa-book"></i> How It Works
-          </a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span>ArenaAnywhere</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="download.html" class="btn-download">Download</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <p class="cta-note">
-          Built for ad-hoc multiplayer. Optimized for eFootball/PES on PPSSPP.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="problem-solution">
-    <div class="container">
-      <div class="section-grid">
-        <div class="problem-card">
-          <div class="icon-wrapper">
-            <i class="fas fa-clock"></i>
-          </div>
-          <h3>Common friction</h3>
-          <ul class="problem-list">
-            <li><i class="fas fa-circle"></i> Searching for opponents across chats/groups</li>
-            <li><i class="fas fa-circle"></i> Manual connection steps and repeated retries</li>
-            <li><i class="fas fa-circle"></i> Inconsistent results depending on network/NAT</li>
-          </ul>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Play PPSSPP eFootball Online.<br>
+                    <span class="gradient-text">Anywhere. Instantly.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Find opponents, connect automatically, and compete.
+                    No VPN hassle. No setup. Just play.
+                </p>
+                <div class="hero-buttons">
+                    <a href="download.html" class="btn btn-primary btn-large">
+                        <i class="fab fa-android"></i> Get Started
+                    </a>
+                    <a href="how-it-works.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i> See How It Works
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="1000">0</span>
+                        <span class="stat-label">Active Players</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5000">0</span>
+                        <span class="stat-label">Matches Played</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Connection Success</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="solution-card">
-          <div class="icon-wrapper">
-            <i class="fas fa-check"></i>
-          </div>
-          <h3>ArenaAnywhere approach</h3>
-          <ul class="solution-list">
-            <li><i class="fas fa-check-circle"></i> Matchmaking and friend challenges</li>
-            <li><i class="fas fa-check-circle"></i> Guided connection flow</li>
-            <li><i class="fas fa-check-circle"></i> Built-in connection checks and support</li>
-          </ul>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="features-preview">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Product</span>
-        <h2>Designed for serious online play</h2>
-        <p>Core features stay simple. Advanced tools are available as Pro for players who want more.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-          <h3>Connection workflow</h3>
-          <p>Clear steps to get both players into the same session reliably.</p>
+    <!-- PROBLEM / SOLUTION -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-grid">
+                <div class="problem-card">
+                    <div class="icon-wrapper icon-red">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h3>The Old Way</h3>
+                    <ul class="problem-list">
+                        <li><i class="fas fa-ban"></i> Manual VPN setup every time</li>
+                        <li><i class="fas fa-ban"></i> Finding opponents on Discord</li>
+                        <li><i class="fas fa-ban"></i> Sharing IPs manually</li>
+                        <li><i class="fas fa-ban"></i> Connection failures</li>
+                        <li><i class="fas fa-ban"></i> Wasted time coordinating</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="icon-wrapper icon-green">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>The ArenaAnywhere Way</h3>
+                    <ul class="solution-list">
+                        <li><i class="fas fa-check-circle"></i> One-tap VPN connection</li>
+                        <li><i class="fas fa-check-circle"></i> Instant opponent matching</li>
+                        <li><i class="fas fa-check-circle"></i> Automatic IP sharing</li>
+                        <li><i class="fas fa-check-circle"></i> Built-in connection testing</li>
+                        <li><i class="fas fa-check-circle"></i> Play in 60 seconds</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-users"></i></div>
-          <h3>Matchmaking</h3>
-          <p>Find an opponent quickly or challenge a friend directly.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <span>ArenaAnywhere</span>
+                    </div>
+                    <p>
+                        The ultimate companion app for PPSSPP online multiplayer.
+                        Built with love for the community.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.com/invite/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/arenaanywhere" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="download.html">Download</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mailto:support@arenaanywhere.com">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArenaAnywhere. All rights reserved.</p>
+                <p class="disclaimer">
+                    PPSSPP is a registered trademark of Henrik Rydgård.
+                    ArenaAnywhere is an independent third-party application.
+                </p>
+            </div>
         </div>
+    </footer>
 
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>Privacy-first</h3>
-          <p>Designed to avoid exposing personal details between players.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Performance insights (Pro)</h3>
-          <p>More detailed stats, history, and competitive tracking for ranked play.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-trophy"></i></div>
-          <h3>Tournaments (Pro)</h3>
-          <p>Structured competitions, brackets, and event tools for communities.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-headset"></i></div>
-          <h3>Support</h3>
-          <p>Guidance when connections fail — plus a place to report issues.</p>
-        </div>
-      </div>
-
-      <div class="text-center">
-        <a href="features.html" class="btn btn-outline">View features <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-it-works-preview">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">How it works</span>
-        <h2>Simple flow, predictable results</h2>
-        <p>Download, match, connect, then paste the IPs into PPSSPP.</p>
-      </div>
-
-      <div class="steps-container">
-        <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-content">
-            <h3>Set up ArenaAnywhere</h3>
-            <p>Install, sign in, and set your username.</p>
-          </div>
-        </div>
-        <div class="step-line"></div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-content">
-            <h3>Find an opponent</h3>
-            <p>Use matchmaking or challenge a friend.</p>
-          </div>
-        </div>
-        <div class="step-line"></div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Connect and play</h3>
-            <p>Follow the connection flow, copy IPs, start the match in PPSSPP.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center" style="margin-top:1.5rem;">
-        <a href="how-it-works.html" class="btn btn-primary">Read the guide <i class="fas fa-book"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Get notified when early access opens</h2>
-        <p class="hero-subtitle" style="margin-bottom:1.2rem;">
-          ArenaAnywhere is preparing for public release. Join early access to receive updates and test builds.
-        </p>
-        <a href="download.html" class="btn btn-primary btn-large">
-          <i class="fas fa-envelope"></i> Join Early Access
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-brand">
-            <i class="fas fa-gamepad"></i>
-            <span>ArenaAnywhere</span>
-          </div>
-          <p style="color:var(--text-dim);max-width:420px;">
-            ArenaAnywhere is an independent companion app for PPSSPP ad-hoc multiplayer.
-          </p>
-
-          <div class="social-links">
-            <a href="#" rel="noopener" title="X/Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Product</h4>
-          <ul>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="download.html">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="mailto:support@arenaanywhere.site">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 ArenaAnywhere.</p>
-        <p class="disclaimer">
-          PPSSPP is a registered trademark of Henrik Rydgård. ArenaAnywhere is an independent third‑party application.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/app.js"></script>
+    <script src="assets/app.js"></script>
 </body>
 </html>
